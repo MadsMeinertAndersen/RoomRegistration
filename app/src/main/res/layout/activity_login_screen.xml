@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreenActivity"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+
+    <TextView
+        android:gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/LoginScreenWelcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+       <Button
+           android:backgroundTint="@android:color/holo_blue_bright"
+           android:layout_gravity="center"
+           android:onClick="ShowRooms"
+           android:text="Show Rooms"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/myReservationsButton"
+        android:visibility="invisible"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:layout_gravity="center"
+        android:onClick="ShowReservations"
+        android:text="My reservations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</LinearLayout>

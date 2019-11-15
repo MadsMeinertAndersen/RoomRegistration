@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Room Registration</string>
+    <string name="title_login_scrren">Front Page</string>
+    <string name="title_rooms">Rooms</string>
+    <string name="title_specific_room">Specific Room</string>
+    <string name="title_login_screen">Login</string>
+    <string name="title_register_screen">Register</string>
+    <string name="room_menu_item">Rooms</string>
+    <string name="logout_menu_item">Logout</string>
+</resources>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MakeReservationActivity"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="Purpose:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:layout_gravity="center"
+        android:id="@+id/PurposeText"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:layout_gravity="center"
+        android:onClick="ChooseDate"
+        android:id="@+id/ChooseDateButton"
+        android:text="Choose date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/ShowDateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:id="@+id/FromTimeButton"
+        android:text="From Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/FromTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:id="@+id/ToTimeButton"
+        android:text="To Time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/ToTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="ReserveRoom"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:id="@+id/reserveButton"
+        android:text="Reserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/OnFailure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
